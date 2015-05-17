@@ -9,7 +9,7 @@ There are four files in the repo:
 * data2_average.txt : The final tidy data set
 
 ## Project objective
-The purpose of the project is demonstrate my ability to collect, work with, and clean a data set.
+The purpose of the project is demonstrate the ability to collect, work with, and clean a data set.
 
 ## Description of data source
 The data was obtained from the following source:
@@ -19,8 +19,8 @@ The original data obtained as ZIP format as follows:
 [https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 
 ## Procedures in the R script : run_analysis.R
-Step 0: Download zipfile from website and extract the data
-* The ZIP file is downloaded from the URL (as show above) and unzip to extract the original data
+Step 0: Download zipfile from website and extract the files
+* The ZIP file is downloaded from the URL (as show above) and unzip to extract the files
 
 Step 1: Merges the training and the test sets to create one data set
 * The training and test sets are imported from the following textfiles:
@@ -30,7 +30,7 @@ X_train.txt, X_test.txt, y_train.txt, y_test.txt,subject_train.txt, subject_test
 Step 2: Extracts only the measurements on the mean and standard deviation for each measurement
 * The data features is imported from the textfile features.txt
 * The features was used to extract the measurements on the mean and standard deviation from
-the data set <b>x</b>, giving rise the final data set <b>x_mean_sd</b>
+the data set <b>x</b>, giving rise the next data set <b>x_mean_sd</b>
 
 Step 3: Uses descriptive activity names to name the activities in the data set
 * The data activities is imported from the textfile activity_labels.txt
@@ -38,9 +38,9 @@ Step 3: Uses descriptive activity names to name the activities in the data set
 
 Step 4: Appropriately labels the data set with descriptive variable names
 * The variables <b>subj</b> and <b>y</b> have labeled appropriate descriptive variable names
-* The variables <b>subj</b>, <b>y</b> and <b>x_mean_sd</b> are concatenated column-wise to form a final tidy data, <b>data1</b>
-* The data <b>data1</b> is output as textfile, 'data1_merged,.txt'
+* The variables <b>subj</b>, <b>y</b> and <b>x_mean_sd</b> are concatenated column-wise to form a tidy data, <b>data1</b>
+* The data set <b>data1</b> is output as textfile, 'data1_merged,.txt'
 
 Step 5: From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject
 * Using the package <b>plyr</b>, the average of each variable for each activity and each subject is computed to give a data set <b>data2</b>.
-* The data <b>data2</b> is output as textfile, 'data2_average,.txt'
+* The data set <b>data2</b> is output as textfile, 'data2_average.txt'
