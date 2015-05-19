@@ -43,19 +43,19 @@ Step 5: From the data set in step 4, creates a second, independent tidy data set
 
 ## Variables
 * url: Link to the website for data source
-* x_train: Data imported from X_train.txt
-* x_test: Data imported from X_test.txt
+* x_train: Data imported from `X_train.txt`
+* x_test: Data imported from `X_test.txt`
 * x: Combined data from x_train and x_test
-* y_train: Data imported from y_train.txt
-* y_test: Data imported from y_test.txt
+* y_train: Data imported from `y_train.txt`
+* y_test: Data imported from `y_test.txt`
 * y: Combined data from y_train and y_test
-* subj_train: Data imported from subject_train.txt
-* subj_test: Data imported from subject_test.txt
+* subj_train: Data imported from `subject_train.txt`
+* subj_test: Data imported from `subject_test.txt`
 * subj: Combined data from subj_train and subj_test
-* features: Data imported from features.txt
+* features: Data imported from `features.txt`
 * x_mean_sd: Selected x data with measurements of means and standard deviations
-* activities: Data imported from activity_labels.txt
-* data1: First tidy data set - Column-wise concatenation of subj,y and x_mean_sd
+* activities: Data imported from `activity_labels.txt`
+* data1: First tidy data set - Column-wise concatenation of subj, y and x_mean_sd
 * data2: Second tidy data set - the average of each variable for each activity and each subject
 
 ## Output
