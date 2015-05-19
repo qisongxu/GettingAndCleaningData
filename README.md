@@ -39,7 +39,7 @@ Step 3: Uses descriptive activity names to name the activities in the data set
 Step 4: Appropriately labels the data set with descriptive variable names
 * The variables <b>subj</b> and <b>y</b> have labeled appropriate descriptive variable names
 * The variables <b>subj</b>, <b>y</b> and <b>x_mean_sd</b> are concatenated column-wise to form a tidy data, <b>data1</b>
-* The data set <b>data1</b> is output as textfile, 'data1_merged,.txt'
+* The data set <b>data1</b> is output as textfile, 'data1_merged.txt'
 
 Step 5: From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject
 * Using the package <b>plyr</b>, the average of each variable for each activity and each subject is computed to give a data set <b>data2</b>.
